@@ -5,20 +5,20 @@ template<typename T>
 class RationalTemplated
 {
 public:
-	RationalTemplated(T numerator = 0, T denominator = 1):numerator(numerator),denominator(denominator){};
+	RationalTemplated(T numerator = 0, T denominator = 1):m_Numerator(numerator),m_Denominator(denominator){};
 	template<typename U>
-	RationalTemplated(const RationalTemplated<U>& a):numerator(a.GetNumerator()),denominator(a.GetDenominator()){};
+	RationalTemplated(const RationalTemplated<U>& a):m_Numerator(a.GetNumerator()),m_Denominator(a.GetDenominator()){};
 	template<typename U>
 	RationalTemplated<T>& operator=(const RationalTemplated<U>& a)
 	{
-		numerator = a.GetNumerator();
-		denominator = a.GetDenominator();
+		m_Numerator = a.GetNumerator();
+		m_Denominator = a.GetDenominator();
 		return *this;
 	}
 
-	T GetNumerator() const{return numerator;};
-	T GetDenominator() const{return denominator;};
-	std::string ToString() const {return std::to_string(numerator) + " : " + std::to_string(denominator);};
+	T GetNumerator() const{return m_Numerator;};
+	T GetDenominator() const{return m_Denominator;};
+	std::string ToString() const {return std::to_string(m_Numerator) + " : " + std::to_string(m_Denominator);};
 
 	friend RationalTemplated<T> operator+(const RationalTemplated<T>& a, const RationalTemplated<T>& b)
 	{
@@ -38,8 +38,8 @@ public:
 	};
 
 private:
-	T numerator;
-	T denominator;
+	T m_Numerator;
+	T m_Denominator;
 };
 
 template<typename T>

@@ -1,7 +1,7 @@
 #include "Interface.h"
 #include "RealImplementation.h"
 
-Interface::Interface(const std::string& text, float value):pimpl(std::make_unique<RealImplementation>(text, value))
+Interface::Interface(const std::string& text, float value):m_Pimpl(std::make_unique<RealImplementation>(text, value))
 {
 }
 
@@ -9,7 +9,7 @@ Interface::~Interface()
 {
 }
 
-Interface::Interface(Interface&& interface):pimpl(std::move(interface.pimpl))
+Interface::Interface(Interface&& interface):m_Pimpl(std::move(interface.m_Pimpl))
 {
 }
 
@@ -17,77 +17,77 @@ Interface& Interface::operator=(Interface&& interface)
 {
 	if(this != &interface)
 	{
-		pimpl = std::move(interface.pimpl);
+		m_Pimpl = std::move(interface.m_Pimpl);
 	}
 	return *this;
 }
 
 void Interface::AddText(const std::string& string)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		pimpl->AddText(string);
+		m_Pimpl->AddText(string);
 	}
 }
 
 void Interface::ClearText()
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		pimpl->ClearText();
+		m_Pimpl->ClearText();
 	}
 }
 
 float Interface::operator*(float op)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->operator*(op);
+		return m_Pimpl->operator*(op);
 	}
 	return -1;
 }
 
 float Interface::operator-(float op)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->operator-(op);
+		return m_Pimpl->operator-(op);
 	}
 	return -1;
 }
 
 float Interface::operator+(float op)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->operator+(op);
+		return m_Pimpl->operator+(op);
 	}
 	return -1;
 }
 
 float Interface::operator/(float op)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->operator/(op);
+		return m_Pimpl->operator/(op);
 	}
 	return -1;
 }
 
 float Interface::operator=(float value)
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->operator=(value);
+		return m_Pimpl->operator=(value);
 	}
 	return 0;
 }
 
 std::string Interface::ToString() const
 {
-	if(pimpl)
+	if(m_Pimpl)
 	{
-		return pimpl->ToString();
+		return m_Pimpl->ToString();
 	}
 	return "null pimpl";
 }

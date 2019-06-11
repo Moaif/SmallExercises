@@ -8,7 +8,7 @@ void TestRationalTemplated();
 
 int main()
 {
-	//TestRational();
+	TestRational();
 	TestRationalTemplated();
 
 	return 0;
@@ -70,7 +70,7 @@ void TestRationalTemplated()
 	system("pause");
 
 	//I want to know how to do this, currently I'm having a problem cause
-	//more than 1 operator can be used for this, as the int can be cast to double
+	//more than 1 operator can be used for this, as the int can be cast to double due to the copy constructor
 	// and the double to int, so both operators will match and dont know how to solve it
 	/*result = r1 + RationalTemplated<double>(2, 3);
 	cout << result.ToString() << endl;

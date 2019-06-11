@@ -16,5 +16,5 @@ public:
 
 	std::string ToString() const;
 private:
-	RandomObject object;//this could be done with a reference and solve the problem, but want to do the pimpl Idiom
+	RandomObject m_Object;//this could be done with a reference and solve the problem, but want to do the pimpl Idiom
 };

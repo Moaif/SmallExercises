@@ -27,5 +27,5 @@ private:
 	Interface(const Interface& interface){};
 	Interface& operator=(const Interface& interface){};
 private:
-	std::unique_ptr<RealImplementation> pimpl;
+	std::unique_ptr<RealImplementation> m_Pimpl;
 };

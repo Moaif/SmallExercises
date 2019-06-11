@@ -3,45 +3,45 @@
 
 RealImplementation::RealImplementation(const std::string& text, float value)
 {
-	object = RandomObject(text, value);
+	m_Object = RandomObject(text, value);
 }
 
 void RealImplementation::AddText(const std::string& string)
 {
-	object.text = object.text + string;
+	m_Object.m_Text = m_Object.m_Text + string;
 }
 
 void RealImplementation::ClearText()
 {
-	object.text.clear();
+	m_Object.m_Text.clear();
 }
 
 float RealImplementation::operator*(float op)
 {
-	return object.value * op;
+	return m_Object.m_Value * op;
 }
 
 float RealImplementation::operator-(float op)
 {
-	return object.value - op;
+	return m_Object.m_Value - op;
 }
 
 float RealImplementation::operator+(float op)
 {
-	return object.value + op;
+	return m_Object.m_Value + op;
 }
 
 float RealImplementation::operator/(float op)
 {
-	return object.value / op;
+	return m_Object.m_Value / op;
 }
 
 float RealImplementation::operator=(float value)
 {
-	return object.value= value;
+	return m_Object.m_Value= value;
 }
 
 std::string RealImplementation::ToString() const
 {
-	return object.text + std::to_string(static_cast<int>(object.value));
+	return m_Object.m_Text + std::to_string(static_cast<int>(m_Object.m_Value));
 }
