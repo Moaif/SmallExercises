@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inheritance", "Inheritance\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TMP-Factorial", "TMP-Factorial\TMP-Factorial.vcxproj", "{A1E2CED5-6392-4B5F-8EAA-D6F8B91D3F92}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "New-Handlers", "New-Handlers\New-Handlers.vcxproj", "{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{A1E2CED5-6392-4B5F-8EAA-D6F8B91D3F92}.Release|x64.Build.0 = Release|x64
 		{A1E2CED5-6392-4B5F-8EAA-D6F8B91D3F92}.Release|x86.ActiveCfg = Release|Win32
 		{A1E2CED5-6392-4B5F-8EAA-D6F8B91D3F92}.Release|x86.Build.0 = Release|Win32
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Debug|x64.ActiveCfg = Debug|x64
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Debug|x64.Build.0 = Debug|x64
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Debug|x86.ActiveCfg = Debug|Win32
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Debug|x86.Build.0 = Debug|Win32
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x64.ActiveCfg = Release|x64
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x64.Build.0 = Release|x64
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x86.ActiveCfg = Release|Win32
+		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
