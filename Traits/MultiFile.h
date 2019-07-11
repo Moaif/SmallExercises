@@ -17,14 +17,14 @@ template<typename T>
 void RealDoSomething(const T& ref, type_Basic type)
 {
 	//do the specific for this type of object
-	std::cout << "basic type overload called" << endl;
+	std::cout << "basic type overload called" << std::endl;
 };
 
 template<typename T>
 void RealDoSomething(const T& ref, type_NonBasic type)
 {
 	//do the specific for this type of object
-	std::cout << "non basic type overload called" << endl;
+	std::cout << "non basic type overload called" << std::endl;
 };
 
 //Without this last overload, C class will enter the type_Basic one as is its best fit

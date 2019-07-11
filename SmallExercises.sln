@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventSystem", "SmallExercises\SmallExercises.vcxproj", "{F1182475-3F6B-4AB0-B736-5C02632429A7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventSystem", "EventSystem\EventSystem.vcxproj", "{F1182475-3F6B-4AB0-B736-5C02632429A7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PimplIdiom", "Project1\Project1.vcxproj", "{65C6596B-D0FB-4430-8265-831922D801D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PimplIdiom", "Pimpl-Idiom\Pimpl-Idiom.vcxproj", "{65C6596B-D0FB-4430-8265-831922D801D9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImplicitTypeConversions", "ImplicitTypeConversions\ImplicitTypeConversions.vcxproj", "{DA22CB6C-7A5B-4964-B7C9-15AE9A26BCC1}"
 EndProject
