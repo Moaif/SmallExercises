@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
@@ -16,6 +15,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TMP-Factorial", "TMP-Factorial\TMP-Factorial.vcxproj", "{A1E2CED5-6392-4B5F-8EAA-D6F8B91D3F92}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "New-Handlers", "New-Handlers\New-Handlers.vcxproj", "{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartPointerImplementation", "SmartPointerImplementation\SmartPointerImplementation.vcxproj", "{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +82,14 @@ Global
 		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x64.Build.0 = Release|x64
 		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x86.ActiveCfg = Release|Win32
 		{A36CFF0B-3EE7-4A50-8341-77A2CC68B899}.Release|x86.Build.0 = Release|Win32
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Debug|x64.ActiveCfg = Debug|x64
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Debug|x64.Build.0 = Debug|x64
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Debug|x86.ActiveCfg = Debug|Win32
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Debug|x86.Build.0 = Debug|Win32
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Release|x64.ActiveCfg = Release|x64
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Release|x64.Build.0 = Release|x64
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Release|x86.ActiveCfg = Release|Win32
+		{8AA87A5C-BBE1-4C9B-AE58-4699C9D6C614}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
